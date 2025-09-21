@@ -1,0 +1,7 @@
+# PostScript names you confirmed:
+# JetBrainsMono-Regular / -Bold / -Italic / -BoldItalic
+
+font_features JetBrainsMono-Regular    +calt +clig +liga +zero +ss01 +cv03 +cv05 +cv11 +cv12 +cv16
+font_features JetBrainsMono-Bold       +calt +clig +liga +zero +ss01 +cv03 +cv05 +cv11 +cv12 +cv16
+font_features JetBrainsMono-Italic     +calt +clig +liga +zero +ss01 +cv03 +cv05 +cv11 +cv12 +cv16
+font_features JetBrainsMono-BoldItalic +calt +clig +liga +zero +ss01 +cv03 +cv05 +cv11 +cv12 +cv16
