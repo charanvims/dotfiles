@@ -1,0 +1,4 @@
+font_features JetBrainsMono-Regular    +calt +clig +liga +zero +ss02 +cv02 +cv04 +cv06 +cv07 +cv14 +cv15 +cv17 +cv18 +cv20
+font_features JetBrainsMono-Bold       +calt +clig +liga +zero +ss02 +cv02 +cv04 +cv06 +cv07 +cv14 +cv15 +cv17 +cv18 +cv20
+font_features JetBrainsMono-Italic     +calt +clig +liga +zero +ss02 +cv02 +cv04 +cv06 +cv07 +cv14 +cv15 +cv17 +cv18 +cv20
+font_features JetBrainsMono-BoldItalic +calt +clig +liga +zero +ss02 +cv02 +cv04 +cv06 +cv07 +cv14 +cv15 +cv17 +cv18 +cv20
