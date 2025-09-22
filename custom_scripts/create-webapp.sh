@@ -52,7 +52,10 @@ ICON_PATH="$ICON_DIR/${SLUG}.png"
 
 if [[ "$ICON_REF" =~ ^https?:// ]]; then
   if has curl; then
-    curl -fsSL -o "$ICON_PATH" "$ICON_REF" || { echo "Icon download failed."; exit 1; }
+    curl -fsSL -o "$ICON_PATH" "$ICON_REF" || {
+      echo "Icon download failed."
+      exit 1
+    }
   else
     echo "curl not found; provide a local PNG path for icon." >&2
     exit 1
@@ -71,6 +74,10 @@ APPS_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/applications"
 mkdir -p "$APPS_DIR"
 DESKTOP_FILE="${APPS_DIR}/${SLUG}.desktop"
 
+# Stable WM_CLASS for grouping/pinning
+WM_CLASS="$(printf "%s" "$APP_NAME" | tr -cd 'A-Za-z0-9')"
+[[ -z "$WM_CLASS" ]] && WM_CLASS="WebApp"
+
 # Exec line: either custom or Chromium with isolated profile
 if [[ -n "$CUSTOM_EXEC" ]]; then
   EXEC_LINE="$CUSTOM_EXEC"
@@ -86,10 +93,6 @@ if ! has chromium-browser; then
   echo "Chromium not found. Install it or update the EXEC_LINE to use your browser." >&2
   exit 1
 fi
-
-# Stable WM_CLASS for grouping/pinning
-WM_CLASS="$(printf "%s" "$APP_NAME" | tr -cd 'A-Za-z0-9')"
-[[ -z "$WM_CLASS" ]] && WM_CLASS="WebApp"
 
 cat >"$DESKTOP_FILE" <<EOF
 [Desktop Entry]
@@ -120,3 +123,4 @@ if $INTERACTIVE; then
   echo -e "Created: $DESKTOP_FILE"
   echo -e "Launcher should appear in your app menu. Pin it from the dock as needed.\n"
 fi
+
