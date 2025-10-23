@@ -12,14 +12,13 @@ set first-page-column 1
 set incremental-search true
 
 # === Font ===
-set font "GeistMono Nerd Font 11"
+set font "JetBrains Mono 11"
 
 # === Recolor (dark mode) ===
 set recolor true                      # start with normal colors
 # set recolor true                     # uncomment to always start in dark mode
-set recolor-lightcolor "#1d2021"       # background when recolor is ON
-set recolor-darkcolor  "#d4be98"       # text when recolor is ON
-
+set recolor-lightcolor "#1e1e2e"   # background when recolor is ON (Base)
+set recolor-darkcolor  "#cdd6f4"   # text when recolor is ON (Text)
 # === Keybindings ===
 map <C-c> copy
 map y copy
@@ -27,41 +26,40 @@ map J navigate next
 map K navigate previous
 map R recolor
 
-# === Gruvbox Material Palette (Dark) ===
-set default-bg              "#1d2021"
-set default-fg              "#d4be98"
+set default-fg                rgba(205,214,244,1)
+set default-bg                rgba(30,30,46,1)
 
-set statusbar-bg            "#1d2021"
-set statusbar-fg            "#d4be98"
+set completion-bg             rgba(49,50,68,1)
+set completion-fg             rgba(205,214,244,1)
+set completion-highlight-bg   rgba(203,166,247,1)
+set completion-highlight-fg   rgba(30,30,46,1)
+set completion-group-bg       rgba(24,24,37,1)
+set completion-group-fg       rgba(205,214,244,1)
 
-set inputbar-bg             "#1d2021"
-set inputbar-fg             "#d4be98"
+set statusbar-fg              rgba(205,214,244,1)
+set statusbar-bg              rgba(17,17,27,1)
+set inputbar-fg               rgba(205,214,244,1)
+set inputbar-bg               rgba(30,30,46,1)
 
-set completion-bg           "#1d2021"
-set completion-fg           "#d4be98"
-set completion-highlight-bg "#282828"
-set completion-highlight-fg "#a9b665"
+set notification-bg           rgba(30,30,46,1)
+set notification-fg           rgba(205,214,244,1)
+set notification-error-bg     rgba(30,30,46,1)
+set notification-error-fg     rgba(243,139,168,1)
+set notification-warning-bg   rgba(30,30,46,1)
+set notification-warning-fg   rgba(249,226,175,1)
 
-set index-bg                "#1d2021"
-set index-fg                "#d4be98"
-set index-active-bg         "#282828"
-set index-active-fg         "#a9b665"
+set recolor                   "true"
+set recolor-lightcolor        rgba(30,30,46,1)
+set recolor-darkcolor         rgba(205,214,244,1)
 
-set notification-bg         "#1d2021"
-set notification-fg         "#d4be98"
-set notification-warning-bg "#1d2021"
-set notification-warning-fg "#d8a657"
-set notification-error-bg   "#1d2021"
-set notification-error-fg   "#ea6962"
+set index-fg                  rgba(205,214,244,1)
+set index-bg                  rgba(30,30,46,1)
+set index-active-fg           rgba(205,214,244,1)
+set index-active-bg           rgba(49,50,68,1)
 
-set render-loading-bg       "#1d2021"
-set render-loading-fg       "#7daea3"
+set render-loading-bg         rgba(30,30,46,1)
+set render-loading-fg         rgba(205,214,244,1)
 
-# === Highlights (translucent so text stays visible) ===
-set highlight-color         "rgba(125,174,163,0.25)"   # search results
-set highlight-active-color  "rgba(216,166,87,0.30)"    # current match
-set highlight-fg            "rgba(29,32,33,1.0)"       # hint overlay text
-
-# === Misc ===
-set uri-launcher "xdg-open"
-set sandbox none
+set highlight-color           rgba(147,153,178,0.3)
+set highlight-fg              rgba(205,214,244,1)
+set highlight-active-color    rgba(203,166,247,0.3)
