@@ -12,7 +12,7 @@ set first-page-column 1
 set incremental-search true
 
 # === Font ===
-set font "JetBrains Mono 11"
+set font "JetBrains Mono Slashed Medium 10.5"
 
 # === Recolor (dark mode) ===
 set recolor true                      # start with normal colors

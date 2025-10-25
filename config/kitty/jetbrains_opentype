@@ -1,6 +1,0 @@
-# --- OpenType features: target by PostScript name ---
-font_features JetBrainsMono-Regular    +calt +clig +liga +zero cv02 cv03 cv04 cv05 cv09 cv10 cv11 cv12 cv15 cv16 cv18
-font_features JetBrainsMono-Bold       +calt +clig +liga +zero cv02 cv03 cv04 cv05 cv09 cv10 cv11 cv12 cv15 cv16 cv18
-font_features JetBrainsMono-Italic     +calt +clig +liga +zero cv02 cv03 cv04 cv05 cv09 cv10 cv11 cv12 cv15 cv16 cv18
-font_features JetBrainsMono-BoldItalic +calt +clig +liga +zero cv02 cv03 cv04 cv05 cv09 cv10 cv11 cv12 cv15 cv16 cv18
-
