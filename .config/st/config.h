@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font =
-    "Maple Mono Medium:pixelsize=15:antialias=true:autohint=true";
+static char *font = "JetBrains Mono Slashed "
+                    "SemiBold:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -95,33 +95,35 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
-/* Everforest Dark Hard */
+/* Gruvbox Material Dark Hard */
 static const char *colorname[] = {
     /* 8 normal colors */
-    "#414b50", /* black   */
-    "#e67e80", /* red     */
-    "#a7c080", /* green   */
-    "#dbbc7f", /* yellow  */
-    "#7fbbb3", /* blue    */
-    "#d699b6", /* magenta */
-    "#83c092", /* cyan    */
-    "#d3c6aa", /* white   */
+    "#665c54", /* black   */
+    "#ea6962", /* red     */
+    "#a9b665", /* green   */
+    "#e78a4e", /* yellow  */
+    "#7daea3", /* blue    */
+    "#d3869b", /* magenta */
+    "#89b482", /* cyan    */
+    "#d4be98", /* white   */
 
     /* 8 bright colors */
-    "#475258", /* black   */
-    "#e67e80", /* red     */
-    "#a7c080", /* green   */
-    "#dbbc7f", /* yellow  */
-    "#7fbbb3", /* blue    */
-    "#d699b6", /* magenta */
-    "#83c092", /* cyan    */
-    "#d3c6aa", /* white   */
+    "#928374", /* bright black   */
+    "#ea6962", /* bright red     */
+    "#a9b665", /* bright green   */
+    "#d8a657", /* bright yellow  */
+    "#7daea3", /* bright blue    */
+    "#d3869b", /* bright magenta */
+    "#89b482", /* bright cyan    */
+    "#d4be98", /* bright white   */
 
     [255] = 0,
 
-    /* more colors can be added after 255 to use with DefaultXX */
-    "#d3c6aa", /* default foreground */
-    "#272e33", /* default background */
+    /* Extended colors */
+    "#d4be98", /* default foreground */
+    "#282828", /* default background */
+    "#a89984", /* cursor color       */
+    "#282828", /* cursor text color  */
 };
 
 /*
@@ -130,8 +132,9 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 256;
 unsigned int defaultbg = 257;
-unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultcs = 258;
+static unsigned int defaultrcs = 259;
+
 /*
  * Default shape of cursor
  * 2: Block ("█")
@@ -139,7 +142,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 7;
+static unsigned int cursorshape = 6;
 
 /*
  * Default columns and rows numbers
